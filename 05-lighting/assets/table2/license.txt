@@ -1,0 +1,11 @@
+Model Information:
+* title:	Zeus Thunderbolt - Gameready
+* source:	https://sketchfab.com/3d-models/zeus-thunderbolt-gameready-5814e1e5ce88477f804abbec20fae600
+* author:	numaan.k99 (https://sketchfab.com/numaan.k99)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Zeus Thunderbolt - Gameready" (https://sketchfab.com/3d-models/zeus-thunderbolt-gameready-5814e1e5ce88477f804abbec20fae600) by numaan.k99 (https://sketchfab.com/numaan.k99) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

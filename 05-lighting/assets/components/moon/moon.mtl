@@ -1,0 +1,12 @@
+# Blender 4.2.3 LTS MTL File: 'ImageToStl.com_star.blend'
+# www.blender.org
+
+newmtl Star_Texture_
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.158960 0.152926 0.168269
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2

@@ -33,24 +33,27 @@ export default class SceneInit {
       1,
       1000
     );
-    this.camera.position.z = 16;
-
+    this.camera.position.z = 10;
+    const canvas =document.getElementById("canvas-container")
     // NOTE: Specify a canvas which is already created in the HTML.
-    const canvas = document.getElementById(this.canvasId);
+    // Check if canvas has existing child elements
+  while (canvas.firstChild) {
+    canvas.removeChild(canvas.firstChild);
+  }
     this.renderer = new THREE.WebGLRenderer({
-      canvas,
+      
       // NOTE: Anti-aliasing smooths out the edges.
       antialias: true,
     });
     this.renderer.setSize(window.innerWidth, window.innerHeight);
     // enable this for shadows
     this.renderer.shadowMap.enabled = true;
-    document.body.appendChild(this.renderer.domElement);
+    
+    canvas.appendChild(this.renderer.domElement);
 
     this.clock = new THREE.Clock();
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
-    this.stats = Stats();
-    document.body.appendChild(this.stats.dom);
+    // document.body.appendChild(this.stats.dom);
 
     // HIDE LIGHTING FOR DEMO.
     // ambient light which is for the whole scene
@@ -67,7 +70,7 @@ export default class SceneInit {
     window.addEventListener('resize', () => this.onWindowResize(), false);
 
     // NOTE: Load space background.
-    // this.loader = new THREE.TextureLoader();
+    this.loader = new THREE.TextureLoader();
     // this.scene.background = this.loader.load('./pics/space.jpeg');
 
     // NOTE: Declare uniforms to pass into glsl shaders.
@@ -81,18 +84,22 @@ export default class SceneInit {
   animate() {
     // NOTE: Window is implied.
     // requestAnimationFrame(this.animate.bind(this));
-    window.requestAnimationFrame(this.animate.bind(this));
     this.render();
-    this.stats.update();
-    this.controls.update();
+    window.requestAnimationFrame(this.animate.bind(this));
+
+    // this.stats.update();
+    // this.controls.update();
   }
+
 
   render() {
     // NOTE: Update uniform data on each render.
     // this.uniforms.u_time.value += this.clock.getDelta();
     this.renderer.render(this.scene, this.camera);
   }
-
+  animationLoop(animationFunction){
+    this.renderer.setAnimationLoop(animationFunction)
+  }
   onWindowResize() {
     this.camera.aspect = window.innerWidth / window.innerHeight;
     this.camera.updateProjectionMatrix();

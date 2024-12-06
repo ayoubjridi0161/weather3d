@@ -1,0 +1,11 @@
+Model Information:
+* title:	Rain Drop (single)
+* source:	https://sketchfab.com/3d-models/rain-drop-single-ac5f6615813148dea0ab0be5119666db
+* author:	rfrick (https://sketchfab.com/rfrick)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Rain Drop (single)" (https://sketchfab.com/3d-models/rain-drop-single-ac5f6615813148dea0ab0be5119666db) by rfrick (https://sketchfab.com/rfrick) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
